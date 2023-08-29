@@ -1,16 +1,157 @@
 /*!***************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
   \***************************************************************************************************************************************************************************************************************************************/
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
-.wp-block-create-block-boiler-plate {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
+.custom-content {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wp-block-viktorias-blocks-content-grid {
+  display: grid;
+  grid-gap: 62px;
+}
+.wp-block-viktorias-blocks-content-grid.-has-1-columns {
+  grid-template-columns: repeat(1, 1fr);
+}
+.wp-block-viktorias-blocks-content-grid.-has-3-columns {
+  grid-template-columns: repeat(3, 1fr);
+}
+.wp-block-viktorias-blocks-content-grid.-has-2-columns.-layout-equal {
+  grid-template-columns: repeat(2, 1fr);
+}
+.wp-block-viktorias-blocks-content-grid.-has-2-columns.-layout-left {
+  grid-template-columns: 2fr 1fr;
+}
+.wp-block-viktorias-blocks-content-grid.-has-2-columns.-layout-right {
+  grid-template-columns: 1fr 2fr;
+}
+
+.content-wrapper.-with-border {
+  border: 2px solid var(--colors-grey, #EBEAED);
+}
+.content-wrapper.-rounded {
+  border-radius: 10px;
+}
+.content-wrapper.-text-align-left {
+  text-align: left;
+}
+.content-wrapper.-text-align-center {
+  text-align: center;
+}
+.content-wrapper.-text-align-right {
+  text-align: right;
+}
+
+.block-editor-block-list__block.-text-align-left, .wp-block-viktorias-blocks-custom-text.-text-align-left {
+  text-align: left;
+}
+.block-editor-block-list__block.-text-align-center, .wp-block-viktorias-blocks-custom-text.-text-align-center {
+  text-align: center;
+}
+.block-editor-block-list__block.-text-align-right, .wp-block-viktorias-blocks-custom-text.-text-align-right {
+  text-align: right;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+.container.-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.container.-big {
+  padding-right: 115px;
+  padding-left: 115px;
+}
+.container.-medium {
+  padding-right: 215px;
+  padding-left: 215px;
+}
+.container.-small {
+  padding-right: 315px;
+  padding-left: 315px;
+}
+
+h1.heading-1 {
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 86px;
+  letter-spacing: -1px;
+}
+
+h2.heading-2 {
+  font-size: 58px;
+  line-height: 70px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+h3.heading-3 {
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: -0.4px;
+}
+
+h4.heading-4 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.4px;
+}
+
+h5.lead {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+p.text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+p.label {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+a.button-main {
+  background-color: transparent;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+}
+a.button-main.-small {
+  font-size: 16px;
+  height: 30px;
+}
+a.button-main.-medium {
+  font-size: 18px;
+  height: 50px;
+}
+a.button-main.-big {
+  font-size: 20px;
+  height: 70px;
+}
+a.button-main.-rounded {
+  border-radius: 100px;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

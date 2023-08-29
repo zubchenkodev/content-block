@@ -1,9 +1,114 @@
-/**
- * The following styles get applied inside the editor only.
- *
- * Replace them with your own styles or remove the file completely.
- */
+html :where(.wp-block) {
+    max-width: 100%;
+}
 
-.wp-block-create-block-boiler-plate {
-	border: 1px dotted #f00;
+.block-editor-block-list__block {
+    > .block-editor-inner-blocks > .block-editor-block-list__layout {
+        display: grid;
+        grid-gap: 62px;
+    }
+    &.-has-1-columns{
+        > .block-editor-inner-blocks > .block-editor-block-list__layout  {
+            .block-editor-block-list__layout {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        
+       
+    }
+    &.-has-3-columns{
+        > .block-editor-inner-blocks > .block-editor-block-list__layout  {
+            grid-template-columns: repeat(3, 1fr);
+        }
+       
+    }
+    &.-has-2-columns{
+        &.-layout-equal {
+            > .block-editor-inner-blocks > .block-editor-block-list__layout {
+                grid-template-columns: repeat(2, 1.5fr);
+            }
+            
+        }
+        &.-layout-left {
+            > .block-editor-inner-blocks > .block-editor-block-list__layout {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+        &.-layout-right {
+            > .block-editor-inner-blocks > .block-editor-block-list__layout {
+                grid-template-columns: 1fr 2fr;
+            }
+        }
+    }
+}
+
+
+.custom-buttons {
+    >.block-editor-inner-blocks {
+        >.block-editor-block-list__layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            >.wp-block {
+                margin: 0;
+            }
+        }
+    }
+    &.-vertical {
+        >.block-editor-inner-blocks {
+            >.block-editor-block-list__layout {
+                flex-direction: column;
+            }
+        }
+    }
+    &.-horizontal {
+        >.block-editor-inner-blocks {
+            >.block-editor-block-list__layout {
+                flex-direction: row;
+            }
+        }
+    }
+    &.-start {
+        >.block-editor-inner-blocks {
+            >.block-editor-block-list__layout {
+                justify-content: flex-start;
+            }
+        }
+    }
+    &.-center {
+        >.block-editor-inner-blocks {
+            >.block-editor-block-list__layout {
+                justify-content: center;
+            }
+        }
+    }
+    &.-end {
+        >.block-editor-inner-blocks {
+            >.block-editor-block-list__layout {
+                justify-content: flex-end;
+            }
+        }
+    }
+    &.-space-around {
+        >.block-editor-inner-blocks {
+            >.block-editor-block-list__layout {
+                justify-content: space-around;
+            }
+        }
+    }
+    &.-space-between {
+        >.block-editor-inner-blocks {
+            >.block-editor-block-list__layout {
+                justify-content: space-between;
+            }
+        }
+    }
+    &.-space-evenly {
+        >.block-editor-inner-blocks {
+            >.block-editor-block-list__layout {
+                justify-content: space-evenly;
+            }
+        }
+    }
+    
 }

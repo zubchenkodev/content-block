@@ -1,18 +1,49 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "viktorias-blocks/boiler-plate",
+	"name": "viktorias-blocks/content-block",
 	"version": "0.1.0",
-	"title": "Boiler Plate",
-	"category": "widgets",
-	"icon": "smiley",
-	"description": "Example block scaffolded with Create Block tool.",
+	"title": "Content Block",
+	"category": "text",
+	"icon": "excerpt-view",
+	"description": "Content Block",
 	"supports": {
-		"html": false
+		"html": false,
+		"spacing": {
+			"padding": true
+		}
 	},
-	"textdomain": "boiler-plate",
+	"textdomain": "content-block",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",
-	"viewScript": "file:./view.js"
+	"viewScript": "file:./view.js",
+	"attributes": {
+		"alignment": {
+			"type": "string",
+			"default": "left"
+		},
+		"backgroundColor": {
+			"type": "string"
+		},
+		"hasBorder": {
+			"type": "boolean"
+		},
+		"isRounded": {
+			"type": "boolean"
+		},
+		"containerSize": {
+			"type": "string",
+			"default": "medium"
+		},
+		"bgImageURL": {
+			"type": "string"
+		},
+		"bgImageID": {
+			"type": "number"
+		},
+		"bgImageAlt": {
+			"type": "string"
+		}
+	}
 }

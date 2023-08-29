@@ -1,12 +1,167 @@
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
 
-.wp-block-create-block-boiler-plate {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+
+.custom-content {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+.wp-block-viktorias-blocks-content-grid {
+    display: grid;
+    grid-gap: 62px;
+    &.-has-1-columns {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    &.-has-3-columns {
+        grid-template-columns: repeat(3, 1fr);  
+    }
+    &.-has-2-columns{
+        &.-layout-equal {
+                grid-template-columns: repeat(2, 1fr);
+        }
+        &.-layout-left {
+            grid-template-columns: 2fr 1fr;
+        }
+        
+        &.-layout-right {
+            grid-template-columns: 1fr 2fr;
+        }
+    }   
+    
+}
+
+
+.content-wrapper {
+    &.-with-border {
+        border: 2px solid var(--colors-grey, #EBEAED);
+    }
+    &.-rounded {
+        border-radius: 10px;
+    }
+    &.-text-align-left {
+        text-align: left;
+    }
+    &.-text-align-center {
+        text-align: center;
+    }
+    &.-text-align-right {
+        text-align: right;
+    }
+}
+
+.block-editor-block-list__block, .wp-block-viktorias-blocks-custom-text {
+    &.-text-align-left {
+        text-align: left;
+    }
+    &.-text-align-center {
+        text-align: center;
+    }
+    &.-text-align-right {
+        text-align: right;
+    }
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    &.-fluid {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    &.-big{
+        padding-right: 115px;
+        padding-left: 115px;
+    }
+    &.-medium{
+        padding-right: 215px;
+        padding-left: 215px;
+    }
+    &.-small{
+        padding-right: 315px;
+        padding-left: 315px;
+    }
+}
+
+// typography
+
+h1.heading-1 {
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 86px;
+    letter-spacing: -1px;
+}
+h2.heading-2 {
+    font-size: 58px;
+    line-height: 70px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+h3.heading-3 {
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px; 
+    letter-spacing: -0.4px;
+}
+
+h4.heading-4 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; 
+    letter-spacing: -0.4px;
+}
+
+h5.lead {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px
+}
+
+p.text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+p.label {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+a.button-main {
+    background-color: transparent;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    &.-small {
+        font-size: 16px;
+        height: 30px;
+    }
+    &.-medium {
+        font-size: 18px;
+        height: 50px;
+    }
+    &.-big {
+        font-size: 20px;
+        height: 70px;
+    }
+    &.-rounded {
+        border-radius: 100px;
+    }
+    
+}
+
+

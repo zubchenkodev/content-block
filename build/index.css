@@ -1,13 +1,61 @@
 /*!****************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/editor.scss ***!
   \****************************************************************************************************************************************************************************************************************************************/
-/**
- * The following styles get applied inside the editor only.
- *
- * Replace them with your own styles or remove the file completely.
- */
-.wp-block-create-block-boiler-plate {
-  border: 1px dotted #f00;
+html :where(.wp-block) {
+  max-width: 100%;
+}
+
+.block-editor-block-list__block > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  display: grid;
+  grid-gap: 62px;
+}
+.block-editor-block-list__block.-has-1-columns > .block-editor-inner-blocks > .block-editor-block-list__layout .block-editor-block-list__layout {
+  grid-template-columns: repeat(1, 1fr);
+}
+.block-editor-block-list__block.-has-3-columns > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  grid-template-columns: repeat(3, 1fr);
+}
+.block-editor-block-list__block.-has-2-columns.-layout-equal > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  grid-template-columns: repeat(2, 1.5fr);
+}
+.block-editor-block-list__block.-has-2-columns.-layout-left > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  grid-template-columns: 2fr 1fr;
+}
+.block-editor-block-list__block.-has-2-columns.-layout-right > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  grid-template-columns: 1fr 2fr;
+}
+
+.custom-buttons > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.custom-buttons > .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block {
+  margin: 0;
+}
+.custom-buttons.-vertical > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  flex-direction: column;
+}
+.custom-buttons.-horizontal > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  flex-direction: row;
+}
+.custom-buttons.-start > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  justify-content: flex-start;
+}
+.custom-buttons.-center > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  justify-content: center;
+}
+.custom-buttons.-end > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  justify-content: flex-end;
+}
+.custom-buttons.-space-around > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  justify-content: space-around;
+}
+.custom-buttons.-space-between > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  justify-content: space-between;
+}
+.custom-buttons.-space-evenly > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  justify-content: space-evenly;
 }
 
 /*# sourceMappingURL=index.css.map*/
